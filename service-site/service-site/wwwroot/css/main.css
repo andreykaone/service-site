@@ -1872,9 +1872,9 @@ h1, h2, h3, h4, h5, h6 {
   right: 20px;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Header
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .header-top {
   font-size: 12px;
   padding: 8px;
@@ -1943,19 +1943,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 9px 26px;
 }
 
-.main-menu {
+/*.main-menu {
   padding-top: 20px;
+}*/
+
+.logo {
+    margin-bottom: 6px;
 }
 
 #header {
-  padding: 0px 0px 20px 0px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  transition: all 0.5s;
-  z-index: 997;
-  background: #fff !important;
+    /*padding: 0px 0px 20px 0px;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    background: #fff !important;
 }
 
 #header.header-scrolled {
@@ -1967,6 +1971,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 673px) {
   #logo {
     margin-left: 20px;
+    background: #fff !important;
   }
 }
 
@@ -3531,9 +3536,3 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: none;
   background: #f9f9ff;
 }
-
-/*
-################
-               End Blog Details  Page style
-################
-*/
