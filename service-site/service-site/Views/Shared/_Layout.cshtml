@@ -4,7 +4,7 @@
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="~/img/fav.png">
+    <link rel="shortcut icon" href="~/favicon.ico">
     <!-- Author Meta -->
     <meta name="author" content="codepixer">
     <!-- Meta Description -->
@@ -29,22 +29,38 @@
 </head>
 <body>
     <header id="header" id="home">
+        <div class="header-top slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-12 header-top-right no-padding">
+                        <a class="fa fa-map-marker text-light" asp-controller="about" asp-action="index"> Тула, ул. Демонстрации, 40</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container main-menu">
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
-                    <a class="nav-link text-dark" asp-controller="Site" asp-action="Index"><img src="img/logo.png" alt="" title="" /></a>
+                    <a class="nav-link text-dark logo" asp-controller="Site" asp-action="Index"><img src="img/logo.png" width="142" height="40" alt="" title="" /></a>
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a class="nav-link text-dark" asp-controller="Site" asp-action="Index">Home</a></li>
-                        <li><a class="nav-link text-dark" asp-controller="About" asp-action="Index">About</a></li>
-                        <li><a class="nav-link text-dark" asp-controller="Service" asp-action="Index">Service</a></li>
-                        <li><a class="nav-link text-dark" asp-controller="Projects" asp-action="Index">Projects</a></li>
+                        <li class="menu-active"><a class="nav-link text-dark" asp-controller="Site" asp-action="Index">Главная</a></li>
+                        <li><a class="nav-link text-dark" asp-controller="about" asp-action="index">О Компании</a></li>
+                        <li><a class="nav-link text-dark" asp-controller="service" asp-action="index">Услуги</a></li>
+                        <li><a class="nav-link text-dark">Прайс</a></li>
+                        <li class="menu-has-children">
+                            <a class=" nav-link text-dark" asp-controller="Elements" asp-action="Index">Elements</a>
+                            <ul>
+                                <li><a class="nav-link text-dark" asp-controller="Blog" asp-action="Home">123</a></li>
+                                <li><a class="nav-link text-dark" asp-controller="Blog" asp-action="Single">456</a></li>
+                            </ul>
+                        </li>
                         <li class="menu-has-children">
                             <a class="nav-link text-dark" asp-controller="Blog" asp-action="Index">Blog</a>
                             <ul>
                                 <li><a class="nav-link text-dark" asp-controller="Blog" asp-action="Home">Blog-Home</a></li>
-                                <li><a class="nav-link text-dark" asp-controller="Blog" asp-action="single">Blog-Single</a></li>
+                                <li><a class="nav-link text-dark" asp-controller="Blog" asp-action="Single">Blog-Single</a></li>
                             </ul>
                         </li>
                         <li><a class="nav-link text-dark" asp-controller="Contact" asp-action="Index">Contact</a></li>
@@ -69,8 +85,8 @@
                         </p>
                         <p class="footer-text">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            Copyright @DateTime.Now.Year &copy;
+                            All rights reserved <br /> This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
